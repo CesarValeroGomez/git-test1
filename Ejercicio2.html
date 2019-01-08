@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ejercicio HTML</title>
+<style>
+.subrayado {
+    background-color: tomato;
+    color: white;
+    padding: 10px;
+}
+</style>
+<script type='text/javascript'>
+		function sumar() 
+		{
+			var n1=document.getElementById('numero1').value;
+			var n2=document.getElementById('numero2').value;
+			var rt=parseFloat(n1)+parseFloat(n2);
+			document.getElementById('resultado').value=rt;
+		}
+		function restar() 
+		{
+			var n1=document.getElementById('numero1').value;
+			var n2=document.getElementById('numero2').value;
+			var rt=parseFloat(n1)-parseFloat(n2);
+			document.getElementById('resultado').value=rt;
+		}
+		function multiplicar() 
+		{
+			var n1=document.getElementById('numero1').value;
+			var n2=document.getElementById('numero2').value;
+			var rt=parseFloat(n1)*parseFloat(n2);
+			document.getElementById('resultado').value=rt;
+		}
+		function dividir() 
+		{
+			var n1=document.getElementById('numero1').value;
+			var n2=document.getElementById('numero2').value;
+			var rt=parseFloat(n1)/parseFloat(n2);
+			document.getElementById('resultado').value=rt;
+		}
+</script>
+</head>
+<body style="background-color:beige;">
+	<table border=2 bordercolor=1px solidgray width=98% align=center>
+		<tr><td align=center colspan=3 bgcolor="dodgerblue">
+			<h1>Perfil Cesar</h1>
+		</td></tr>	
+		<tr>
+			<td width=20% align=left>
+				<img src="Endava.jpg" alt="Endava" width="300" height="270">
+			</td>
+			
+			<td  width=65% align=left>
+				<br>
+				<h2 class="subrayado">Cesar</h2>
+				<i><p>A dedicated and motivated Test Analyst with 5 years of experience in Test Engineering with knowledge across
+				multiple types of testing i.e.  functional, non-functional, regression, smoke, end to end, cross-browser, 
+				devices testing and so on. </p>
+				<p>
+				Cesar is proficient in setting testing best practices for the manual testing area starting from defining the
+				strategy, documentation processing, manual tests creation, maintenance and execution, bug reports processing and
+				creation of intermediate and final reports to the client. 
+				<p> Cesar is proactive, responsible, enterprising person, organized, and assertive being constant, knowledge of 
+				attention to the client. Capacity of working in a teamwork and individually. </p> </i>
+				<br>Current Job:  <a class="subrayado" href="http://www.endava.com/en">ENDAVA</a></br>
+				<br>
+			</td>
+			
+			<td  width=15% align=center>
+				<img src="CesarProd.png" alt="Cesar" width="180" height="270">
+			</td>
+		</tr>
+		<tr><td width=50% align=left colspan=2 bgcolor="darkseagreen">
+		    <h2 class="subrayado">Work with us</h2>
+			<iframe align=center src="https://en.wikipedia.org/wiki/Endava_d.o.o." width="1000" height="600"></iframe>
+		</td>
+	
+	<td width=50% align=center>
+	<h2 class="subrayado">Calculadora</h2>
+	<DIV align = 'center'>
+	<FORM name='registro' method='GET' action='#'>
+		<TABLE border='1'>
+		<TR>
+			<TH>Numero 1</TH><TD><input type='text' name='numero1' id='numero1' size='16' /></TD>
+		</TR>
+		<TR>
+			<TH>Numero 2</TH><TD><input type='text' name='numero2' id='numero2' size='16' /></TD>		
+		</TR>
+		<TR>
+			<TH>Resultado</TH><TD><input type='text' name='resultado' id='resultado' size='16'  /></TD>											
+		</TR>
+		</TABLE>
+		<input type='button' value='  +  ' onclick='sumar()'/>
+		<input type='button' value='  -  ' onclick='restar()'/>
+		<input type='button' value='  x  ' onclick='multiplicar()'/>
+		<input type='button' value='  ÷  ' onclick='dividir()'/>
+		<input type='reset' value='limpiar' onclick='alert("Campos Borrados")'/>
+	</Form>	
+	</DIV>
+		</td></tr>
+	</table>
+</body>
+</html>
